@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroVisionAI — Predict Visual Attention Before Anything Goes Live</title>
+  <meta name="description" content="NeuroVisionAI predicts visual attention, semantic clarity, and perceptual impact before anything goes live.">
+  <meta property="og:title" content="NeuroVisionAI — Predict Visual Attention Before Anything Goes Live">
+  <meta property="og:description" content="NeuroVisionAI predicts visual attention, semantic clarity, and perceptual impact before anything goes live.">
+  <meta property="og:image" content="assets/opengraph-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/twitter-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particles canvas -->
+  <div id="particles-container" aria-hidden="true">
+    <canvas id="particles-canvas"></canvas>
+  </div>
+
+  <main>
+    <!-- Top nav -->
+    <nav class="top-nav fade-in">
+      <a href="about.html" class="about-link">Meet the Team</a>
+    </nav>
+
+    <section>
+      <!-- CTA -->
+      <div id="cta" class="fade-in fade-delay-1">
+        <div class="badge-container">
+          <div class="shimmer-badge">
+            <span class="shimmer-text">Waitlist for Beta version opened &middot; Raising our first round</span>
+          </div>
+        </div>
+        <img src="assets/logo.svg" alt="NeuroVisionAI logo" class="logo" />
+        <h1 class="heading">Before they click. Before they buy. Before they read. <strong>They look first.</strong></h1>
+        <p class="subheading">NeuroVisionAI predicts visual attention, semantic clarity, and perceptual impact before anything goes live.</p>
+      </div>
+
+      <!-- Form -->
+      <div id="form-section" class="fade-in fade-delay-2">
+        <form id="waitlist-form" onsubmit="return false;">
+          <input type="text" id="name-input" placeholder="Your Name" autocomplete="name" />
+          <input type="email" id="email-input" placeholder="Your Email Address" autocomplete="email" />
+          <button type="submit" id="submit-btn" class="submit-btn">
+            <span id="btn-text">Join Waitlist!</span>
+            <svg id="btn-arrow" viewBox="0 0 448 512" width="14" height="14" fill="currentColor"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+          </button>
+        </form>
+        <div class="contact-info">
+          <p>For any questions, reach out to </p>
+          <a href="https://www.linkedin.com/company/neurovisionaiglobal" target="_blank" rel="noopener noreferrer" class="linkedin-icon">
+            <svg viewBox="0 0 448 512" width="16" height="16" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.83-48.3 93.97 0 111.28 61.9 111.28 142.3V448z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Problem / Solution -->
+      <div id="problem-section" class="fade-in-scroll">
+        <h2 class="section-heading">Creative AI made content generation instant.<br><span class="text-highlight">Evaluation is still missing.</span></h2>
+
+        <div class="stat-cards">
+          <div class="stat-card">
+            <span class="stat-value">$1T+</span>
+            <span class="stat-label">spent yearly on marketing &amp; visual communication</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">1–2%</span>
+            <span class="stat-label">improvement in design performance unlocks billions</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <p class="callout-text">Research from <strong>MIT, Harvard Business School, and WARC</strong> shows that generative AI does not significantly improve marketing effectiveness or conversion rates.</p>
+        </div>
+
+        <p class="section-text section-text-lg">AI can generate creative — but it cannot evaluate how humans will perceive it.</p>
+
+        <div class="solution-box">
+          <p class="solution-label">The missing layer</p>
+          <p class="solution-text">A platform where teams can <strong>generate, predict, evaluate, and refine</strong> visual content in one workflow.</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- What the platform does — Slider -->
+      <div id="features-section" class="fade-in-scroll">
+        <h2 class="section-heading">What the platform does</h2>
+
+        <div class="slider">
+          <div class="slider-track">
+            <!-- Slide 1 -->
+            <div class="slide active" data-index="0">
+              <div class="slide-image">
+                <img src="assets/feature-predict.png" alt="Predict Attention — Analysis Results" onerror="this.style.display='none'" />
+                <div class="image-placeholder">Screenshot</div>
+              </div>
+              <div class="slide-content">
+                <h3 class="slide-title">Predict Attention</h3>
+                <p class="slide-text">See what draws the eye, what gets ignored, and how visual hierarchy unfolds.</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" data-index="1">
+              <div class="slide-image">
+                <img src="assets/feature-understand.png" alt="Understand Meaning — Insight Report" onerror="this.style.display='none'" />
+                <div class="image-placeholder">Screenshot</div>
+              </div>
+              <div class="slide-content">
+                <h3 class="slide-title">Understand Meaning</h3>
+                <p class="slide-text">Evaluate what the design communicates, how it is interpreted, and the response it is likely to create.</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide" data-index="2">
+              <div class="slide-image">
+                <img src="assets/feature-refine.png" alt="Refine Creatives" onerror="this.style.display='none'" />
+                <div class="image-placeholder">Screenshot</div>
+              </div>
+              <div class="slide-content">
+                <h3 class="slide-title">Refine Creatives</h3>
+                <p class="slide-text">Generate stronger, interactive, adjustable design versions based on perceptual and behavioral insight.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider controls -->
+          <div class="slider-controls">
+            <button class="slider-btn slider-prev" aria-label="Previous">&larr;</button>
+            <div class="slider-dots">
+              <button class="dot active" data-slide="0"></button>
+              <button class="dot" data-slide="1"></button>
+              <button class="dot" data-slide="2"></button>
+            </div>
+            <button class="slider-btn slider-next" aria-label="Next">&rarr;</button>
+          </div>
+        </div>
+
+        <h3 class="workflow-heading">How Does it Work? Try yourself!</h3>
+        <p class="workflow-steps">
+          <span class="step">Upload or Create</span>
+          <span class="step-arrow">&rarr;</span>
+          <span class="step">Analyze</span>
+          <span class="step-arrow">&rarr;</span>
+          <span class="step">Refine</span>
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- The Science behind NeuroVision -->
+      <div id="science-section" class="fade-in-scroll">
+        <h2 class="section-heading">The Science behind NeuroVision</h2>
+
+        <div class="science-grid">
+          <div class="science-card">
+            <div class="science-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><line x1="10" y1="22" x2="14" y2="22"/></svg>
+            </div>
+            <h3 class="science-title">Neuroscience</h3>
+            <p class="science-desc">How the brain processes and prioritizes visual information</p>
+          </div>
+          <div class="science-card">
+            <div class="science-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <h3 class="science-title">Eye-tracking</h3>
+            <p class="science-desc">Predicting where people look, how long, and in what order</p>
+          </div>
+          <div class="science-card">
+            <div class="science-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="science-title">Cognition</h3>
+            <p class="science-desc">How meaning, clarity, and emotion are perceived at a glance</p>
+          </div>
+          <div class="science-card">
+            <div class="science-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="science-title">Behavioral Science</h3>
+            <p class="science-desc">What drives decision-making and action in real-world contexts</p>
+          </div>
+        </div>
+
+        <p class="section-text science-collab">Developed in collaboration with top academic environments and shaped through conversations with global companies exploring the future of design and marketing workflows.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Where we are -->
+      <div id="status-section" class="fade-in-scroll">
+        <h2 class="section-heading">Where we are</h2>
+
+        <div class="status-badge">MVP Built</div>
+        <p class="section-text">Core attention models are functional, the intelligence layer is integrated, and we are now preparing for launch.</p>
+
+        <div class="raise-card">
+          <p class="raise-heading">We are raising capital to:</p>
+          <ul class="raise-list">
+            <li>
+              <span class="raise-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              Strengthen infrastructure
+            </li>
+            <li>
+              <span class="raise-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              Improve responsiveness at scale
+            </li>
+            <li>
+              <span class="raise-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              Support global expansion
+            </li>
+            <li>
+              <span class="raise-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              Secure runway for business development &amp; partnerships
+            </li>
+          </ul>
+        </div>
+
+        <p class="status-closing">The technology is ready.<br><strong>Now we scale and launch globally.</strong></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Bottom CTA -->
+      <div id="bottom-cta" class="fade-in-scroll">
+        <div class="bottom-cta-inner">
+          <p class="bottom-workflow">Create / Upload &middot; Predict &middot; Evaluate &middot; Refine</p>
+          <h2 class="bottom-tagline">NeuroVisionAI turns creative guesswork into a measurable design workflow.</h2>
+          <a href="#form-section" class="bottom-cta-btn">Join the Waitlist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast container -->
+  <div id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
