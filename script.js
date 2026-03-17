@@ -53,18 +53,21 @@ if (form) form.addEventListener("submit", async function (e) {
     return;
   }
 
+  const isInvestor = investorCheckbox && investorCheckbox.checked;
+
   // Disable form
   submitBtn.disabled = true;
   btnText.textContent = "Loading...";
 
   const loadingToast = showToast("Getting you on the waitlist... 🚀", "loading");
 
-  // Mock API call — simulate a short delay
   try {
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-
-    // Mock success — in production, replace with real API calls
-    console.log("Waitlist signup (mocked):", { name, email });
+    await fetch("https://script.google.com/macros/s/AKfycbwwWPhuBU9MykFVRIyBtIhV5Yqk-gOI40AKq3b4kr_2qPEOs3wWYmCGHhmS9zAZs5ACrg/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain" },
+      body: JSON.stringify({ name, email, investor: isInvestor }),
+    });
 
     removeToast(loadingToast);
     const t = showToast("Thank you for joining the waitlist 🎉", "success");
@@ -78,7 +81,7 @@ if (form) form.addEventListener("submit", async function (e) {
     setTimeout(() => removeToast(t), 3000);
   } finally {
     submitBtn.disabled = false;
-    btnText.textContent = investorCheckbox && investorCheckbox.checked ? "Reach Out" : "Join Waitlist!";
+    btnText.textContent = isInvestor ? "Reach Out" : "Join Waitlist!";
   }
 });
 
