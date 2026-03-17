@@ -23,6 +23,13 @@ const nameInput = document.getElementById("name-input");
 const emailInput = document.getElementById("email-input");
 const submitBtn = document.getElementById("submit-btn");
 const btnText = document.getElementById("btn-text");
+const investorCheckbox = document.getElementById("investor-checkbox");
+
+if (investorCheckbox) {
+  investorCheckbox.addEventListener("change", function () {
+    btnText.textContent = this.checked ? "Reach Out" : "Join Waitlist!";
+  });
+}
 
 function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -71,7 +78,7 @@ if (form) form.addEventListener("submit", async function (e) {
     setTimeout(() => removeToast(t), 3000);
   } finally {
     submitBtn.disabled = false;
-    btnText.textContent = "Join Waitlist!";
+    btnText.textContent = investorCheckbox && investorCheckbox.checked ? "Reach Out" : "Join Waitlist!";
   }
 });
 
