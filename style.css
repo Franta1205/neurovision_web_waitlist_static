@@ -201,9 +201,12 @@ header {
 }
 
 .logo {
-  width: 6rem;
-  height: 6rem;
+  width: 10rem;
+  height: 10rem;
   margin: 0 auto;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 .heading {
@@ -363,6 +366,29 @@ header {
 .contact-info .linkedin-icon:hover {
   opacity: 0.8;
   color: #fff;
+}
+
+/* Investor button */
+.investor-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background: linear-gradient(135deg, #e74c6f, #e04040);
+  border: none;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.investor-btn:hover {
+  opacity: 0.85;
 }
 
 /* Dividers */
