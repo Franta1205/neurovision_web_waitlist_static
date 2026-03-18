@@ -87,7 +87,7 @@
   flex-shrink: 0;
   width: 8rem;
   height: 8rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   overflow: hidden;
   background: #1a1a1f;
 }
@@ -230,7 +230,7 @@
   flex-shrink: 0;
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 0.375rem;
+  border-radius: 1.25rem;
   overflow: hidden;
   background: #1a1a1f;
 }
