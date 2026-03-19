@@ -1005,7 +1005,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+}
+
+.top-nav .about-link {
+  position: absolute;
+  right: 1rem;
 }
 
 .about-link {
