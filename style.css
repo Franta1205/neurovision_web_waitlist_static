@@ -655,7 +655,6 @@ header {
   position: relative;
   width: 100%;
   max-width: 36rem;
-  aspect-ratio: 16 / 10;
   border-radius: 0.75rem;
   overflow: hidden;
   background: #18181b;
@@ -664,8 +663,9 @@ header {
 
 .slide-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .slide-image img + .image-placeholder {
